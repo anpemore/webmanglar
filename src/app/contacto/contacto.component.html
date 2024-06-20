@@ -1,0 +1,24 @@
+
+
+
+<div class="container">
+       <form  class="form">           
+             
+                     <label>Nombre</label>                           
+                     <input type="text" class="form-control" name="nombre"[(ngModel)]="nombre">             
+              
+                     <label name="apellido">Apellido</label>
+                     <input type="text" class="form-control" name="apellido" [(ngModel)]="apellido">
+              
+                     <label name="telefono">Teléfono</label>
+                     <input type="number" class="form-control" name="telefono" [(ngModel)]="telefono">
+          
+                     <label name="email">Email</label>
+                     <input type="text" class="form-control" name="email" [(ngModel)]="email">
+                
+                    <div style="margin: 20px;text-align: center;">             
+                     <button type="button" class="btn btn-block btn-primary" (click)="VerificarCampos()">Aceptar</button>
+                     <button type="button" class="btn btn-warning" style="margin-left: 10px;" (click)="LimpiarCampos()">Cancelar</button>
+                  </div>   
+      </form>
+</div>

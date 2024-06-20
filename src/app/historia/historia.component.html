@@ -1,0 +1,53 @@
+<div class="ventana">
+      <div class="nav">
+          
+           <li class="menu">Cultura
+                <ul>
+                    <li class="submenu-item" (click)="setHistoria('cultura')">Bailes Tipicos</li>
+                    <li class="submenu-item">Tadiciones</li>
+                    <li class="submenu-item">Fiestas</li>
+                </ul>
+           </li>
+           <li class="menu">Economia
+
+               <ul>
+                    <li class="submenu-item" (click)="setHistoria('economia')">Agricultura</li>
+                   
+                    <li class="submenu-item">Ganaderia
+
+                         <ul class="misubmenu">
+                              <li class="submenu-item">Extensiva</li>
+                              <li class="submenu-item">Intensiva</li>
+                              <li class="submenu-item">Pesca</li>
+                          </ul>
+
+                    </li>
+                    <li class="submenu-item">Pesca</li>
+                </ul>
+
+           </li>
+           <li class="menu" (click)="setHistoria('deporte')">Deporte</li>
+           <li class="menu" (click)="setHistoria('personajes')">Personajes</li>
+      </div>
+
+ 
+
+      <div class="main">
+             <div *ngIf="dato=='cultura'">
+                  <h1 style="text-align: center;border-top: 20px;">Estamos en la cultura</h1>
+                   <app-cultura></app-cultura>
+             </div>
+             <div *ngIf="dato=='economia'">
+                  <h1 style="text-align: center;border-top: 20px;">Agricultura de la región</h1>
+                  <app-economia></app-economia>
+             </div>
+             <div *ngIf="dato=='deporte'">
+                  <h1 style="text-align: center;border-top: 20px;">Sección de Deportes</h1>
+                  <app-deportes></app-deportes>
+             </div>
+             <div *ngIf="dato=='personajes'">
+                 <app-personas></app-personas>
+             </div>
+                 
+      </div>
+</div>

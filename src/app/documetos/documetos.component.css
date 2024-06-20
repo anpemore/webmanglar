@@ -1,0 +1,25 @@
+.titulo{
+    text-align:center;
+    font-size: 24px;
+    color: blue;   
+}
+.menu-item{
+    list-style: none;
+    cursor: pointer;
+    background-color: rgb(128, 138, 185);
+    margin-bottom: 10px;
+    border-radius: 0%;
+    padding: 10px;
+    text-align: center;
+    box-shadow: rgb(214, 34, 28) 5px 5px 10px;
+    color: aliceblue;
+    font-size: 24px;
+    transition: all 300ms;
+   
+}
+.menu-item:hover{    
+    background-color: rgb(15, 58, 247);
+    box-shadow: rgb(236, 202, 5) 5px 5px 10px;
+    transform: scale(1.1);
+    
+}

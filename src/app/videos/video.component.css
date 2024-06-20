@@ -1,0 +1,13 @@
+
+.ventana{
+    display: flex;
+    margin-top: 20px;
+}
+video{
+    margin-left: 4px;
+    margin-bottom: 0;
+}
+small{
+     margin-top: 0%;
+     border: solid;
+}

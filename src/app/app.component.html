@@ -1,0 +1,167 @@
+     <div>
+          <div class="header" style="background: url(./assets/img/ima5.jpg);background-repeat: no-repeat;background-size: cover;">             
+             <img class="img" src="./assets/img/img2.jpeg" >
+             <!--  <img class="img" src="./assets/img/ima3.jpg" >-->
+               <p style="font-size: 28px;color: #fff;position: absolute;left: 71%;margin-top: 10px;">Contactenos</p>
+              <div class="containerIcono">
+                   <img class="icono" src="./assets/icono/icontwitter.png" (click)="setIcono('icontwitter')">
+                   <img class="icono" src="./assets/icono/whatsapp.png" >
+                   <img class="icono" src="./assets/icono/iconfacebook.png" >
+                   <img class="icono" src="./assets/icono/iconmessenger.png" >
+                   <img class="icono" src="./assets/icono/phone.png" >                   
+              </div>
+               
+          </div>
+          <div class="nav">
+                 <p class="logo">I.E.R Santa Rosa de lima</p>
+                <ul class="menu">
+                      <li class="menu-linck" (click)="IniciarVariable('inicio')">Emprendimiento 11</li>                      
+                      <li class="menu-linck" (click)="IniciarVariable('historia')">Historias</li>
+                      <li class="menu-linck" (click)="IniciarVariable('fotos')">Fotos</li>
+                      <li class="menu-linck" (click)="IniciarVariable('videos')">Videos</li>
+                      <li class="menu-linck" (click)="IniciarVariable('documental')">Documetales</li>                      
+                </ul>
+          </div>
+          <div class="main">
+               <div class="article">
+                    <div *ngIf="icono=='icontwitter'">
+                         <app-contacto></app-contacto>
+                    </div>
+                    <div *ngIf="datos=='inicio'">
+                         <app-inicio></app-inicio>
+                    </div>
+                    <div *ngIf="datos=='historia'">
+                         <app-historia></app-historia>
+                    </div>
+                    <div *ngIf="datos=='fotos'">
+                         <app-foto (valor)="setIniciarvariable($event)"></app-foto>
+                    </div>
+                    <div *ngIf="datos=='videos'">
+                         <app-video (newItemEvent)="setIniciarvariable($event)"></app-video>
+                    </div>
+                    
+                    <div *ngIf="documental=='documentaluno'">                         
+                         <p style="font-size: 30px;color: #fff;text-align: center;background: rgb(0, 225, 255);">
+                              formulario de las fiestas
+                         </p>
+                    </div>  
+                    
+                    
+                    <div *ngIf="documental=='documentaldos'">                         
+                         <p style="font-size: 30px;color: #fff;text-align: center;background: rgb(195, 201, 195);">
+                              Carreras de Caballos
+
+                              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, 
+                              ipsa repellendus, ipsam laborum aspernatur consequuntur, voluptate 
+                              itaque architecto autem similique voluptatibus maiores maxime libero 
+                              ea ullam iste dolore quasi? Voluptates voluptate, laudantium nihil 
+                              ducimus veritatis dolor. Animi totam eos consectetur impedit, quos 
+                              vel id, nemo ipsam cupiditate dolor unde optio libero atque fugiat 
+                              corporis voluptas facilis vitae, distinctio aperiam eius autem soluta? 
+                              Impedit voluptatem commodi reiciendis minus dolor! Dicta, eligendi! 
+                              Dolorum vero voluptatem aperiam sunt, nisi fugiat ipsa veritatis 
+                              nostrum explicabo excepturi enim aut nobis possimus nemo earum eum 
+                              autem dolores omnis, eius vel sed ducimus doloremque? Esse, repudiandae 
+                              eveniet.
+                         </p>
+                    </div>  
+                    <div *ngIf="documental=='documentaltres'">                         
+                         <p style="font-size: 30px;color: #fff;text-align: center;background: rgb(15, 7, 129);">
+                              Cosechar la producción
+                         </p>
+                    </div>  
+                    <div *ngIf="documental=='documentalcuatro'">                         
+                         <p style="font-size: 30px;color: #fff;text-align: center;background: rgb(204, 99, 187);">
+                              Anédoctas del pueblo
+                         </p>
+                    </div>  
+                    <div *ngIf="documental=='documentalquinta'">                         
+                         <p style="font-size: 30px;color: #fff;text-align: center;background: rgb(3, 144, 163);">
+                              Personaje
+                         </p>
+                    </div>  
+                    
+                </div>
+                <div class="aside"> 
+                        <div *ngIf="datos=='documental'">
+                              <app-documetos (datoAlPadre)="setDocumental($event)"></app-documetos>
+                        </div>
+                        <div *ngIf="valor=='1'">
+                              <h1 style="color: red;">Imagen Numero Uno</h1>
+                              <img src="./assets/img/ima1.jpg" width="400px" height="400px">
+                              <p>Lorem ipsum, dolor sit amet consectetur 
+                                 adipisicing elit. Maxime eum, ex tempore 
+                                 corrupti, temporibus perspiciatis corporis 
+                                 deserunt accusantium quasi necessitatibus 
+                                 cumque, rem vero expedita atque. Perspiciatis, 
+                                 praesentium. Illo, quaerat. Aut.
+                              </p>
+                        </div>                  
+                        <div *ngIf="valor=='2'">
+                              <h1 style="color: blue;">Imagen Numero Dos</h1>
+                              <img src="./assets/img/ima2.jpg" width="400px" height="400px">
+                              <p>Lorem ipsum, dolor sit amet consectetur 
+                                 adipisicing elit. Maxime eum, ex tempore 
+                                 corrupti, temporibus perspiciatis corporis 
+                                 deserunt accusantium quasi necessitatibus 
+                                 cumque, rem vero expedita atque. Perspiciatis, 
+                                 praesentium. Illo, quaerat. Aut.
+                              </p>
+                        </div>                  
+                        <div *ngIf="valor=='3'">
+                              <h1 style="color: blueviolet;">Imagen Numero tres</h1>
+                              <img src="./assets/img/ima3.jpg" width="400px" height="400px">
+                              <p>Lorem ipsum, dolor sit amet consectetur 
+                                 adipisicing elit. Maxime eum, ex tempore 
+                                 corrupti, temporibus perspiciatis corporis 
+                                 deserunt accusantium quasi necessitatibus 
+                                 cumque, rem vero expedita atque. Perspiciatis, 
+                                 praesentium. Illo, quaerat. Aut.
+                              </p>
+                        </div>                  
+                        <div *ngIf="valor=='4'">
+                              <h1 style="color: aqua;">Imagen Numero Cuatro</h1>
+                              <img src="./assets/img/ima4.jpg" width="400px" height="400px">
+                              <p>Lorem ipsum, dolor sit amet consectetur 
+                                 adipisicing elit. Maxime eum, ex tempore 
+                                 corrupti, temporibus perspiciatis corporis 
+                                 deserunt accusantium quasi necessitatibus 
+                                 cumque, rem vero expedita atque. Perspiciatis, 
+                                 praesentium. Illo, quaerat. Aut.
+                              </p>
+                        </div>                  
+                        <div *ngIf="valor=='5'">
+                              <h1 style="color: aquamarine;">Imagen Numero Cinco</h1>
+                              <img src="./assets/img/ima5.jpg" width="400px" height="400px">
+                              <p>Lorem ipsum, dolor sit amet consectetur 
+                                 adipisicing elit. Maxime eum, ex tempore 
+                                 corrupti, temporibus perspiciatis corporis 
+                                 deserunt accusantium quasi necessitatibus 
+                                 cumque, rem vero expedita atque. Perspiciatis, 
+                                 praesentium. Illo, quaerat. Aut.
+                              </p>
+                        </div>                  
+                        <div *ngIf="valor=='6'">
+                              <h1 style="color: aquamarine;">Imagen Numero seis</h1>
+                              <img src="./assets/img/ima13.jpeg" width="400px" height="400px">
+                              <p>Lorem ipsum, dolor sit amet consectetur 
+                                 adipisicing elit. Maxime eum, ex tempore 
+                                 corrupti, temporibus perspiciatis corporis 
+                                 deserunt accusantium quasi necessitatibus 
+                                 cumque, rem vero expedita atque. Perspiciatis, 
+                                 praesentium. Illo, quaerat. Aut.
+                              </p>
+                        </div> 
+                        
+                      <!--  <p *ngIf="probar==false; else parrafo">solo promesas</p>
+                        <ng-template #parrafo>
+                            <p style="color: red;"> entro al si no</p>   
+                        </ng-template>-->
+                        <div *ngIf="datos=='inicio'">
+                          <h1>Por Programa esta parte</h1>
+                        </div>
+                                      
+                </div>
+          </div>
+          <div class="footer">pie de pagina </div>
+     </div>

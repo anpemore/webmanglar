@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+  
+}
+.header{
+    position: relative;
+    display: flex;
+   /* border: solid;
+    border-color: red;*/
+    margin-top: 5px;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    background:#438aa0;
+}
+.img{
+    border-radius: 50%;
+}
+.containerIcono{
+    position: absolute;
+    align-items: center;
+    right: 20px;
+}
+.icono{
+    text-align: center;
+    height:40px;
+    width:40px;
+    margin-top: 10px;
+   
+}
+.nav{
+    position: relative;
+   /* border: solid;
+    border-color: yellow;*/
+    margin-top: 5px;
+    width: 100%;   
+    align-items: center;
+    margin: 0;
+    height: 70px;   
+   /* background: #85dadd; */
+    background: linear-gradient(30deg, #3a3333, #006699);
+}
+.logo{
+    background:#000;    
+    border-radius: 10px;
+    padding: 5px;
+    position: absolute;
+    left: 20px;
+    color: #fff;
+    box-shadow: rgb(240, 241, 245) 5px 5px 10px;
+   font-size: 24px;
+}
+.logo:hover{
+    background: rgb(14, 14, 231);
+    transition: .6s;
+}
+.icono{
+    transition: all 300ms;
+    margin-top: 15px;
+    box-shadow: rgb(221, 36, 36) 5px 5px 10px;
+}
+.icono:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.menu{
+    display: flex;
+    background: #000;
+    margin:5px;
+    cursor: pointer;  
+    position: absolute;
+    right: 6px;
+    box-shadow: rgb(245, 241, 241) 5px 5px 10px;
+   /* background: linear-gradient(30deg, #0f0d0d, #35abe6);
+   background: radial-gradient(center, circle, #FFFFFF 0%, #006699 200%); */
+}
+.menu-linck:hover{
+    background: rgb(14, 14, 231);
+   /* box-shadow: rgb(8, 12, 252) 0 6px;*/
+    
+}
+.menu-linck{
+   /*   border: solid;
+    border-color: blueviolet;*/
+     
+     list-style: none;
+     margin-right: 2px;
+     color: #fff;
+     font-size: 24px;
+     /*background: #576de7;*/
+     padding: 4px;
+}
+.main{
+    display: flex;
+   /* border: solid;
+    border-color: rgb(0, 255, 42);*/
+    background: #cadfe6;
+    margin-top: 5px;
+    width: 100%;
+    height: 600px;    
+}
+.article{
+   /* border: solid;
+    border-color: orangered;*/
+    margin: 5px;
+    width: 70%;
+    height: 98%;
+    overflow-y: scroll;  
+}
+.aside{
+   /* border: solid;
+    border-color: violet;*/
+    margin: 5px;
+    width: 28%;
+    height: 98%;
+}
+.footer{
+   /* border: solid;
+    border-color: brown;*/
+    margin: 5px;
+}

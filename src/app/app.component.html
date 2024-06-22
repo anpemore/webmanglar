@@ -2,6 +2,7 @@
           <div class="header" style="background: url(./assets/img/ima5.jpg);background-repeat: no-repeat;background-size: cover;">             
              <img class="img" src="./assets/img/img2.jpeg" >
              <!--  <img class="img" src="./assets/img/ima3.jpg" >-->
+            
                <p style="font-size: 28px;color: #fff;position: absolute;left: 71%;margin-top: 10px;">Contactenos</p>
               <div class="containerIcono">
                    <img class="icono" src="./assets/icono/icontwitter.png" (click)="setIcono('icontwitter')">
@@ -12,7 +13,7 @@
               </div>
                
           </div>
-          <div class="nav">
+          <div class="nav"> 
                  <p class="logo">I.E.R Santa Rosa de lima</p>
                 <ul class="menu">
                       <li class="menu-linck" (click)="IniciarVariable('inicio')">Emprendimiento 11</li>                      
@@ -82,7 +83,7 @@
                     </div>  
                     
                 </div>
-                <div class="aside"> 
+                <div class="aside" style="overflow-y: auto;"> 
                         <div *ngIf="datos=='documental'">
                               <app-documetos (datoAlPadre)="setDocumental($event)"></app-documetos>
                         </div>
@@ -158,7 +159,79 @@
                             <p style="color: red;"> entro al si no</p>   
                         </ng-template>-->
                         <div *ngIf="datos=='inicio'">
-                          <h1>Por Programa esta parte</h1>
+                         <h2>Actividad</h2>
+                         <div style="margin: 30px;">Un grupo de astronautas que ha tenido un accidente con su nave espacial
+                         en la Luna y ha tenido que abandonarla. tienen que recorrer a pie una distancia
+                         de 300 Km hasta llegar a otra nave que los llevará a la Tierra. De todo el material
+                         que tienen en la nave sólo an podido aprovechar 15 objetos (cuadro
+                         adjunto).La supervivencia del grupo depende de saber decidir y seleccionar los
+                         objetos más imprescindibles para el trayecto. Tienen que hacer una clasificación
+                         de los siguientes objetos de mayor a menor importancia, asignándoles números
+                         del 1 al 15. (1 mayor y 15 menor).</div>
+                         <br><br>
+                         <div>
+                        
+                              <table style="width: 100%;">
+                              <header style="border: solid;width: 100%;">  
+                                  <tr>
+                                     <th>individual</th>                                     
+                                     <th>grupal</th>
+                                     <th>Nasa</th>
+                                   </tr>
+                              </header>
+                               <tbody>
+                                   <tr>
+                                     <td>Cajas de fosforo</td>
+                                   </tr>
+                                   <tr>  
+                                     <td>Comestible concentradotd</td>
+                                   </tr> 
+                                   <tr> 
+                                     <td>20 metros de soga</td>
+                                   </tr>
+                                   <tr> 
+                                     <td>Tela de seda</td>
+                                   </tr>
+                                   <tr>
+                                        <td>Calentador de alimento</td>
+                                   </tr>
+                                   <tr>
+                                        <td>Dos Pistolas</td>
+                                   </tr>
+                                   <tr>
+                                        <td>Caja de leche en polvo</td>
+                                   </tr>
+
+                                   <tr>
+                                        <td>Dos Botellas de oxigeno</td>
+                                   </tr>
+                                   <tr>
+                                        <td>Mapa de la luna</td>
+                                   </tr>
+                                   <tr>
+                                        <td>Bote Salvavida</td>
+                                   </tr>
+
+                                   <tr>
+                                        <td>25 litros de Agua</td>
+                                   </tr>
+
+                                   <tr>
+                                        <td>Brujula</td>
+                                   </tr>
+                                   
+                                   <tr>
+                                        <td>Botiquin</td>
+                                   </tr>
+
+                                   <tr>
+                                        <td>Una Radio</td>
+                                   </tr>
+                                      
+                                </tbody>
+                                 </table>
+                          
+                         </div>
                         </div>
                                       
                 </div>

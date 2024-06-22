@@ -31,15 +31,14 @@
 }
 .nav{
     position: relative;
-   /* border: solid;
-    border-color: yellow;*/
-    margin-top: 5px;
+ 
+    /*margin-top: 5px;*/
     width: 100%;   
     align-items: center;
     margin: 0;
     height: 70px;   
    /* background: #85dadd; */
-    background: linear-gradient(30deg, #3a3333, #006699);
+    background: linear-gradient(30deg, #0e0d0d, #0d0d0e);
 }
 .logo{
     background:#000;    
@@ -52,7 +51,7 @@
    font-size: 24px;
 }
 .logo:hover{
-    background: rgb(14, 14, 231);
+    background: rgb(134, 134, 180);
     transition: .6s;
 }
 .icono{
@@ -66,37 +65,34 @@
 }
 
 .menu{
-    display: flex;
-    background: #000;
-    margin:5px;
+    display: flex;    
+   
     cursor: pointer;  
     position: absolute;
     right: 6px;
-    box-shadow: rgb(245, 241, 241) 5px 5px 10px;
+   
+   
    /* background: linear-gradient(30deg, #0f0d0d, #35abe6);
    background: radial-gradient(center, circle, #FFFFFF 0%, #006699 200%); */
 }
 .menu-linck:hover{
-    background: rgb(14, 14, 231);
+    background: rgb(134, 134, 180);
    /* box-shadow: rgb(8, 12, 252) 0 6px;*/
     
 }
 .menu-linck{
-   /*   border: solid;
-    border-color: blueviolet;*/
-     
-     list-style: none;
-     margin-right: 2px;
-     color: #fff;
-     font-size: 24px;
+    list-style: none;
+    margin-right: 2px;
+    color: #fff;
+    font-size: 24px;
      /*background: #576de7;*/
-     padding: 4px;
+     padding: 10px;
 }
 .main{
     display: flex;
    /* border: solid;
-    border-color: rgb(0, 255, 42);*/
-    background: #cadfe6;
+    border-color: rgb(0, 255, 42);
+    background: #cadfe6;*/
     margin-top: 5px;
     width: 100%;
     height: 600px;    
@@ -120,4 +116,29 @@
    /* border: solid;
     border-color: brown;*/
     margin: 5px;
+}
+
+td{
+    border: solid;
+}
+
+@media(max-width:952px){
+     .menu-linck{
+        font-size: 20px;
+        color: rgb(39, 12, 160);
+    }
+    .logo{
+       font-size: 20px;
+        
+    }
+}
+@media(max-width:858px){
+    .logo{
+        display: none;
+        font-size: 10px;
+    }
+    .menu-linck{
+        font-size: 10px;
+        color: red;
+    }
 }

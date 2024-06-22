@@ -6,17 +6,20 @@
 .header{
     position: relative;
     display: flex;
-   /* border: solid;
-    border-color: red;*/
+    background-image: url(/assets/img/img2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-top: 5px;
     width: 100%;
     height: 80px;
     text-align: center;
-    background:#438aa0;
+   
+    
 }
 .img{
-    border-radius: 50%;
-}
+    margin: 4px;
+    box-shadow: rgb(240, 241, 245) 5px 5px 10px;
+   }
 .containerIcono{
     position: absolute;
     align-items: center;
@@ -88,38 +91,56 @@
      /*background: #576de7;*/
      padding: 10px;
 }
+
+
+
 .main{
     display: flex;
-   /* border: solid;
-    border-color: rgb(0, 255, 42);
-    background: #cadfe6;*/
-    margin-top: 5px;
+    margin-top: 2px;
     width: 100%;
     height: 600px;    
 }
 .article{
    /* border: solid;
     border-color: orangered;*/
-    margin: 5px;
-    width: 70%;
-    height: 98%;
-    overflow-y: scroll;  
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/img/img5.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: auto;  
 }
 .aside{
-   /* border: solid;
-    border-color: violet;*/
-    margin: 5px;
-    width: 28%;
-    height: 98%;
+    background-image: url(/assets/img/img2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40%;
+    height: 100%;
 }
 .footer{
-   /* border: solid;
-    border-color: brown;*/
-    margin: 5px;
+   position: relative; 
+   margin-top: 3px;
+   height: 200px;
+   background-color: rgb(64, 64, 94);
+  
 }
-
+.cabeza{
+    position: absolute;
+    margin: 10px;
+    border: solid 4px;
+    border-bottom-color: #159288;
+   
+   
+}
+.contactos{
+    font-size: 28px;
+    color: #fff;position: 
+    absolute;left: 71%;
+    margin-top: 10px;
+}
 td{
     border: solid;
+    color-scheme: #fff;
 }
 
 @media(max-width:952px){
@@ -138,7 +159,19 @@ td{
         font-size: 10px;
     }
     .menu-linck{
-        font-size: 10px;
-        color: red;
+        font-size: 15px;
+       background-color: #fff;
+    }
+    .aside{
+        display: none;
+    }
+    .main{
+        width: auto;
+    }
+    .contactos{
+       display: none;
+    }
+    p{
+        font-size: 15px;
     }
 }

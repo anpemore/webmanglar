@@ -7,10 +7,10 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class DocumetosComponent {
     @Output() datoAlPadre =new EventEmitter<string>();
-    title="Documentales De San Jose Del Playón";
-    doc="Fiestas patronales";
-    doc1="Carreras de caballo";
-    doc2="Cosechar la producción";
+    title="Documentales Manglar Giraldo Antioquia";
+    doc="Fiestas Culturales";
+    doc1="Fiesta dos";
+    doc2="Actividad tres";
     doc3="Anédoctas";
     doc4="Personajes";
      getLlenar(valor:string){

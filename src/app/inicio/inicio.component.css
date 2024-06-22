@@ -1,8 +1,23 @@
 h2{
 
-    text-align: center; margin: 20px;
+    text-align: center; 
+    margin: 20px;
 }
 .imagen{
     text-align: center;
     
+}
+p{
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-size: 20px;
+    
+}
+@media(max-width:858px){
+  
+    p{
+        font-size: 15px;
+    }
+    img{
+        width: 50%;
+    }
 }

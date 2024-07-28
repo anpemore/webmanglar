@@ -16,11 +16,11 @@
           <div class="nav"> 
                  <p class="logo">I.E.R Santa Rosa de lima</p>
                 <ul class="menu">
-                      <li class="menu-linck" (click)="IniciarVariable('inicio')">Emprendimiento 11</li>                      
-                      <li class="menu-linck fuera" (click)="IniciarVariable('historia')" >Historias</li>
-                      <li class="menu-linck fuera" (click)="IniciarVariable('fotos')">Fotos</li>
-                      <li class="menu-linck fuera" (click)="IniciarVariable('videos')">Videos</li>
-                      <li class="menu-linck fuera" (click)="IniciarVariable('documental')">Documetales</li>                      
+                      <li class="menu-linck" (click)="IniciarVariable('inicio')">Algoritmo C++ 11</li>                      
+                      <li class="menu-linck fuera" (click)="IniciarVariable('historia')" >Emprendimiento 10</li>
+                      <li class="menu-linck fuera" (click)="IniciarVariable('fotos')">Informatica 10</li>
+                      <li class="menu-linck fuera" (click)="IniciarVariable('videos')">Emprendimiento 11</li>
+                      <li class="menu-linck fuera" (click)="IniciarVariable('documental')">Etica y valores 9</li>                      
                 </ul>
           </div>
           <div class="main">
@@ -29,7 +29,15 @@
                          <app-contacto></app-contacto>
                     </div>
                     <div *ngIf="datos=='inicio'">
-                         <app-inicio></app-inicio>
+                         <div style="margin-left: 300px;">
+                              <label for="codigo">Ingrese el codigo</label>
+                              <input type="text" class="form-control" name="codigo" [(ngModel)]="codigo" style="width: 200px;"> 
+                              <br>
+                              <input type="submit" class="btn btn-primary" value="Aceptar" (click)="funcionCodigo()">
+                         </div>                         
+                           <p *ngIf="permiso">
+                              <app-inicio></app-inicio> 
+                           </p>                            
                     </div>
                     <div *ngIf="datos=='historia'">
                          <app-historia></app-historia>
@@ -41,10 +49,8 @@
                          <app-video (newItemEvent)="setIniciarvariable($event)"></app-video>
                     </div>
                     
-                    <div *ngIf="documental=='documentaluno'">                         
-                         <p style="font-size: 30px;color: #fff;text-align: center;background: rgb(0, 225, 255);">
-                              formulario de las fiestas
-                         </p>
+                    <div *ngIf="datos=='documental'">                         
+                         <app-documetos></app-documetos>
                     </div>  
                     
                     
@@ -83,7 +89,7 @@
                     </div>  
                     
                 </div>
-                <div class="aside" style="overflow-y: auto;"> 
+               <!-- <div class="aside" style="overflow-y: auto;"> 
                         <div *ngIf="datos=='documental'">
                               <app-documetos (datoAlPadre)="setDocumental($event)"></app-documetos>
                         </div>
@@ -154,10 +160,10 @@
                               </p>
                         </div> 
                         
-                      <!--  <p *ngIf="probar==false; else parrafo">solo promesas</p>
+                        <p *ngIf="probar==false; else parrafo">solo promesas</p>
                         <ng-template #parrafo>
                             <p style="color: red;"> entro al si no</p>   
-                        </ng-template>-->
+                        </ng-template>
                         <div *ngIf="datos=='inicio'">
                          <h2>Actividad</h2>
                          <div style="margin: 30px;">Un grupo de astronautas que ha tenido un accidente con su nave espacial
@@ -234,10 +240,10 @@
                          </div>
                         </div>
                                       
-                </div>
+                </div>-->
           </div>
           <div class="footer">
-                <div class="cabeza">
+                <div style="margin: 40px;color: #fff;">
                     Institución Educativa Rural Santa Rosa De Lima                      
                 </div>
           </div>

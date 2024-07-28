@@ -16,6 +16,9 @@ export class AppComponent {
   pdoc1:string=""; 
   pdoc2:string=""; 
   pdoc3:string=""; 
+  clave:string="89557"
+  codigo:string="";
+  permiso:boolean=false;
 
   probar:boolean=false;
 
@@ -23,9 +26,16 @@ export class AppComponent {
       this.datos=valor; 
       this.icono="";  
       this.documental=""; 
-      this.valor="";  
+      this.valor=""; 
+      this.permiso=false;
+      
   }
-
+funcionCodigo(){
+   if(this.codigo==this.clave){
+       this.permiso=true;
+       this.codigo="";
+     }
+}
   setHistoria(valor:string){
      this.valor=valor;  
      

@@ -7,7 +7,7 @@ import { ConexionesService } from '../conexiones.service';
   styleUrls: ['./inicio.component.css']
 })
 export class InicioComponent {
-        titulo="Que son las Empresa";
+        titulo="Algoritmos en C++";
         constructor(conexionesService:ConexionesService){
        
       } 

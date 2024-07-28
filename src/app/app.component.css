@@ -99,19 +99,17 @@
     margin-top: 2px;
     width: 100%;
     height: 600px;    
-}
+   }
 .article{
-   /* border: solid;
-    border-color: orangered;*/
     width: 100%;
     height: 100%;
-    background-image: url(/assets/img/img5.jpeg);
+   /* background-image: url(/assets/img/img5.jpeg);*/
     background-repeat: no-repeat;
     background-size: cover;
     overflow-y: auto;  
 }
 .aside{
-    background-image: url(/assets/img/img2.jpeg);
+  /*  background-image: url(/assets/img/img2.jpeg);*/
     background-repeat: no-repeat;
     background-size: cover;
     width: 40%;
@@ -120,8 +118,8 @@
 .footer{
    position: relative; 
    margin-top: 3px;
-   height: 200px;
-   background-color: rgb(64, 64, 94);
+   height: 100px;
+   background-color: rgb(41, 57, 82);
   
 }
 .cabeza{
@@ -159,7 +157,7 @@ td{
         font-size: 10px;
     }
     .menu-linck{
-        font-size: 15px;
+        font-size: 10px;
        background-color: #fff;
     }
     .aside{

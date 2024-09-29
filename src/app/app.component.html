@@ -1,11 +1,11 @@
-     <div>
+     <div style="background: #f5f2f2;">
           <div class="header">             
-             <img class="img" src="./assets/img/img5.jpeg" >
+             <img class="img" src="./assets/img/escudo.jpg"(click)="IniciarVariable('documental')" style="margin-left: 20px;">
              <!--  <img class="img" src="./assets/img/ima3.jpg" >-->
             
                <p class="contactos">Contactenos</p>
               <div class="containerIcono">
-                   <img class="icono" src="./assets/icono/icontwitter.png" (click)="setIcono('icontwitter')">
+                   <img class="icono" src="./assets/icono/icontwitter.png" (click)="('icontwitter')">
                    <img class="icono" src="./assets/icono/whatsapp.png" >
                    <img class="icono" src="./assets/icono/iconfacebook.png" >
                    <img class="icono" src="./assets/icono/iconmessenger.png" >
@@ -14,29 +14,39 @@
                
           </div>
           <div class="nav"> 
-                 <p class="logo">I.E.R Santa Rosa de lima</p>
+                 <p class="logo" (click)="IniciarVariable('historia')">{{titulo}}</p>
+                 
+
+
                 <ul class="menu">
-                      <li class="menu-linck" (click)="IniciarVariable('inicio')">Algoritmo C++ 11</li>                      
-                      <li class="menu-linck fuera" (click)="IniciarVariable('historia')" >Emprendimiento 10</li>
-                      <li class="menu-linck fuera" (click)="IniciarVariable('fotos')">Informatica 10</li>
-                      <li class="menu-linck fuera" (click)="IniciarVariable('videos')">Emprendimiento 11</li>
-                      <li class="menu-linck fuera" (click)="IniciarVariable('documental')">Etica y valores 9</li>                      
+                    <li class="menu-linck fuera" (click)="IniciarVariable('fotos')"disable>Tecnologia 9</li>
+                    <li class="menu-linck fuera" (click)="IniciarVariable('videos')" disable>Tecnologia 10</li>
+                    <li class="menu-linck fuera" (click)="IniciarVariable('historia')" disable >Tecnologia 11</li>
+                   <!-- <li  class="menu-linck" (click)="IniciarVariable('inicio')"disable >Emprendimiento 10</li>                 
+                    <li class="menu-linck fuera" (click)="IniciarVariable('documental')" disable>Etica y valores 9</li>   -->                 
                 </ul>
           </div>
+          <div style="text-align: center;margin-top: 20px;">
+               
+                   <img src="./assets/img/escudo.jpg" alt="" height="100px">
+              
+              </div>
           <div class="main">
+              
                <div class="article">
                     <div *ngIf="icono=='icontwitter'">
                          <app-contacto></app-contacto>
                     </div>
-                    <div *ngIf="datos=='inicio'">
-                         <div style="margin-left: 300px;">
-                              <label for="codigo">Ingrese el codigo</label>
-                              <input type="text" class="form-control" name="codigo" [(ngModel)]="codigo" style="width: 200px;"> 
-                              <br>
-                              <input type="submit" class="btn btn-primary" value="Aceptar" (click)="funcionCodigo()">
+                    <div *ngIf="datos=='inicio'" style="margin-top: 10px;">
+                         <div style="margin-left: 300px;border-radius:20px ;height: 100px;width: 300px;box-shadow: rgb(150, 150, 150) -10px 10px 5px; padding: 10px; background: #f5f2f2;">
+                              <label style="margin-left: 10px;" for="Código">Ingrese el codigo</label>
+                              <input style="margin-left: 20px;" type="text" class="form-control" name="codigo" [(ngModel)]="codigo" style="width: 200px;"> 
+                              
+                              <input type="submit" class="btn btn-primary" style="margin: 8px;" value=" Aceptar " (click)="funcionCodigo()">
                          </div>                         
                            <p *ngIf="permiso">
-                              <app-inicio></app-inicio> 
+                              <app-inicio></app-inicio>
+                               
                            </p>                            
                     </div>
                     <div *ngIf="datos=='historia'">
@@ -244,7 +254,7 @@
           </div>
           <div class="footer">
                 <div style="margin: 40px;color: #fff;">
-                    Institución Educativa Rural Santa Rosa De Lima                      
+                    <p>{{titulo}}</p>                      
                 </div>
           </div>
      </div>

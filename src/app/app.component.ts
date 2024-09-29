@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'htmlycss';
+  titulo='I.E.R Alfonso Moreno Usuga';
   datos:string="";
   valor:string="";
   icono:string="";
@@ -35,6 +35,8 @@ funcionCodigo(){
        this.permiso=true;
        this.codigo="";
      }
+     else 
+      alert("El código ingresado no es correcto");
 }
   setHistoria(valor:string){
      this.valor=valor;  

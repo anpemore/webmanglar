@@ -7,7 +7,7 @@ import { ConexionesService } from '../conexiones.service';
   styleUrls: ['./inicio.component.css']
 })
 export class InicioComponent {
-        titulo="Trabajo de Emprendimiento";
+        titulo=" Ética y Valores";
         constructor(conexionesService:ConexionesService){
        
       } 

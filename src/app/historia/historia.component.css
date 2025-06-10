@@ -1,31 +1,10 @@
-ul{
-    border: solid;
-    width: 50%;
-}
+.container{
 
-.imagen{
-    text-align: center;
 }
-
-.variable{
-    margin: 20px;
-    box-shadow: rgb(133, 134, 134) 5px 5px 10px;
+.j{
+    margin-left: 100px;
+    border: 2px solid red;
 }
-.lista{
-    align-items: center;
-    margin: 20px;
-}
-
-h1{
-    margin: 40px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.nota{
-    color: red;
-}
-
 @media(max-width:952px){
     .menu-linck{
        font-size: 20px;
@@ -38,8 +17,8 @@ h1{
 }
 @media(max-width:858px){
    img{
-       width: 300px;
-       height: 200px;
+       width: 100px;
+       height: 100px;
    }
   
 }

@@ -3,7 +3,7 @@ figcaption{
     font-size: 10px;
 } 
 .im{
-   /* border: solid;
+   /*
     border-color: rgb(248, 248, 253);
     height: 280px;
     width: 280px;
@@ -18,7 +18,94 @@ figcaption{
 h3{
     text-align: center;
 }*/
-.contenido{
-    margin-bottom: 20px;
-    box-shadow: 10 10 10 beige;
+.container{
+    
+    width: 100%;
+    border: solid;
+    border-color: red;
 }
+ .m{
+    font-size: 30px; 
+ } 
+.encabezado{
+     width:  100%;
+     height: 150px;
+}
+.main{
+    justify-content: center;
+    border: solid;
+    display: flex;
+
+}
+img{
+    width: 377px;
+    height: 397px;
+}
+.hombre{
+    margin: 10px;
+    cursor: pointer;
+   
+   
+}
+.num{
+     margin: 0;
+     padding: 0;
+     text-align: center;
+     font-size: 40px;
+}
+.mujer{
+    margin: 10px;
+    cursor: pointer;
+    
+}
+.blanco{
+    text-align: center;
+    margin: 10px;
+   
+    width: 400px;
+    height: 400px;
+}
+p{
+    font-size: 70PX;
+}
+@media(max-width:870px){
+     .main{
+        border: none;
+     }
+     .container{
+        border: none;
+     }
+}
+@media(max-width:658px){
+    div{
+        overflow: auto;
+       }
+
+   img{
+      width: 100px;
+      height: 100px;
+    }
+    .blanco{
+        width: 100px;
+      height: 100px;
+    }
+    p{
+        font-size: 12px;
+        text-align: center;
+    }
+    .m{
+        font-size: 12px;
+        text-align: center;
+    }
+  
+    .main{
+        height: 400px;
+        width: 400px;
+        border: none;
+    }     
+    .container{
+        border: none;
+    }
+    
+ }
+ 

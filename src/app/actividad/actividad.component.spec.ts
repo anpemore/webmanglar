@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FotoComponent } from './foto.component';
+import { FotoComponent } from './actividad.component';
 
 describe('FotoComponent', () => {
   let component: FotoComponent;

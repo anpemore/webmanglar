@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { HistoriaComponent } from './historia/historia.component';
 import { VideoComponent } from './videos/video.component';
-import { FotoComponent } from './foto/foto.component';
+import { FotoComponent } from './actividad/actividad.component';
 import { DocumetosComponent } from './documetos/documetos.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
